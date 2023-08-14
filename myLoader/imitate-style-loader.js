@@ -5,10 +5,8 @@
  * @param {any} [meta] meta 数据，可以是任何内容
  */
 function selfLoader(content, map, meta) {
-  const cssContent = content.match(/(?<=__CSS_SOURCE__)((.|\s)*?)(?=\*\/)/g);
-  console.log('---cssContent-->',cssContent)
   let style = `const styleDom = document.createElement('style');
-  styleDom.innerHTML=${JSON.stringify(cssContent)};
+  styleDom.innerHTML=${content};
   document.head.appendChild(styleDom);
   `;
   return style

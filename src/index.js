@@ -1,4 +1,4 @@
-import css from "./index.css";
+import css from "./style";
 
  function component() {
    const element = document.createElement('div');
@@ -10,3 +10,6 @@ import css from "./index.css";
  }
 
  document.body.appendChild(component());
+
+ import main from './main/index';
+ main()

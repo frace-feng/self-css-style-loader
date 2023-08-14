@@ -9,13 +9,13 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/index.css":
+/***/ "./src/style.css":
 /*!***********************!*\
-  !*** ./src/index.css ***!
+  !*** ./src/style.css ***!
   \***********************/
 /***/ (() => {
 
-eval("const styleDom = document.createElement('style');\n  styleDom.innerHTML=[\"body {\\n  background-color: #20232a;\\n}\\n\\ndiv{\\n  color: red;\\n}\"];\n  document.head.appendChild(styleDom);\n  \n\n//# sourceURL=webpack://self-loader/./src/index.css?");
+eval("const styleDom = document.createElement('style');\n  styleDom.innerHTML=\"body {\\n  background-color: #20232a;\\n}\\n\\ndiv{\\n  color: red;\\n}\\n\\n.box{\\n  color: green;\\n}\\n\\nspan{\\n  background-color: blueviolet;\\n}\";\n  document.head.appendChild(styleDom);\n  \n\n//# sourceURL=webpack://self-loader/./src/style.css?");
 
 /***/ }),
 
@@ -26,7 +26,18 @@ eval("const styleDom = document.createElement('style');\n  styleDom.innerHTML=[\
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.css */ \"./src/index.css\");\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_0__);\n\n\n function component() {\n   const element = document.createElement('div');\n\n   element.innerHTML = 'hello world';\n\n   return element;\n\n }\n\n document.body.appendChild(component());\n\n//# sourceURL=webpack://self-loader/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style */ \"./src/style.css\");\n/* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _main_index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./main/index */ \"./src/main/index.js\");\n\n\n function component() {\n   const element = document.createElement('div');\n\n   element.innerHTML = 'hello world';\n\n   return element;\n\n }\n\n document.body.appendChild(component());\n\n \n (0,_main_index__WEBPACK_IMPORTED_MODULE_1__[\"default\"])()\n\n//# sourceURL=webpack://self-loader/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/main/index.js":
+/*!***************************!*\
+  !*** ./src/main/index.js ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n\n function component() {\n   const element = document.createElement('span');\n\n   element.innerHTML = 'spanspanspanspanspanspanspanspanspanspanspanspan';\n\n   document.body.appendChild(element);\n\n }\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component);\n\n//# sourceURL=webpack://self-loader/./src/main/index.js?");
 
 /***/ })
 

@@ -5,8 +5,7 @@
  * @param {any} [meta] meta 数据，可以是任何内容
  */
 function selfLoader(content, map, meta) {
-  // 你的 webpack loader 代码
-  return `/**__CSS_SOURCE__${content}*/`;
+  return JSON.stringify(content);
 }
 
 module.exports = selfLoader;
