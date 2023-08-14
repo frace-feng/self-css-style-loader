@@ -4,8 +4,8 @@
 
 class MyPlugin{
   apply(compiler){
-    compiler.hooks.done.tap('My Plugin', (stats) => {
-      console.log('Bravo!');
+    compiler.hooks.done.tap('MyPlugin', (stats) => {
+      console.log('webpack打包成功后打印一句话---!');
     });
   }
 }

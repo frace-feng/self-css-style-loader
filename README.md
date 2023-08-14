@@ -22,3 +22,8 @@ webpack webpack-cli html-webpack-plugin webpack-dev-server --D
 
 webpack webpack-cli：搭建webpack项目
 html-webpack-plugin：帮忙生成html文件， 在 body 中使用 script 标签引入你所有 webpack 生成的 bundle。
+
+## 简单plugin
+
+compiler.hooks.done.tap 在打包构建完成后打印日志
+compiler.hooks.emit.tapAsync 一个文件清单和大小的插件，需要在文件生成到dist目录之前进行
