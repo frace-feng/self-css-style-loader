@@ -1,9 +1,11 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MyPlugin = require('./myPlugin/log')
-const FileListPlugin = require('./myPlugin/FileListPlugin')
+const MyPlugin = require('./myPlugins/log')
+const FileListPlugin = require('./myPlugins/FileListPlugin')
+const SpeedMeasurePlugin = require("speed-measure-webpack-plugin");
+const smp = new SpeedMeasurePlugin();
 
-module.exports = {
+module.exports = smp.wrap({
   entry: './src/index.js',
   output: {
     filename: 'main.js',
@@ -38,4 +40,4 @@ module.exports = {
   new FileListPlugin({filename:'fileLen.md'})
 
 ]
-};
+});

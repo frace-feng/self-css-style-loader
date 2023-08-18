@@ -25,5 +25,9 @@ html-webpack-plugin：帮忙生成html文件， 在 body 中使用 script 标签
 
 ## 简单plugin
 
-compiler.hooks.done.tap 在打包构建完成后打印日志
-compiler.hooks.emit.tapAsync 一个文件清单和大小的插件，需要在文件生成到dist目录之前进行
+- compiler.hooks.done.tap 在打包构建完成后打印日志
+- compiler.hooks.emit.tapAsync 一个文件清单和大小的插件，需要在文件生成到dist目录之前进行
+
+## webpack构建速度分析工具
+
+speed-measure-webpack-plugin
